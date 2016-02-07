@@ -31,18 +31,20 @@
 
       </div>
 
-      <script>
 
+      <script>
         // create a firebase reference to the root
-        var ref = new Firebase('https://hello-ucdd2.firebaseio.com/')
+        var ref = new Firebase('https://crackling-torch-8927.firebaseio.com/')
 
         // read data from the location bio/favorite_foods, only once
-        ref.child('bio/favorite_foods').once('value', function(snapshot){
-          var foods = snapshot.val()
-          foods.forEach(function(food){
-            $('#foods').append('<li class="collection-item">' + food + '</li>')
+        ref.child('bio/favfood').on('value', function(snapshot){
+          var foods1 = snapshot.val()
+          foods1.forEach(function(food){
+		      console.log("inside	")
+          $('#foods').append('<li class="collection-item">' + food + '</li>')
           })
         })
       </script>
+   
     </body>
   </html>
