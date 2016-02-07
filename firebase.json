@@ -1,6 +1,6 @@
 {
   "firebase": "crackling-torch-8927",
-  "public": "src/apps/resume",
+  "public": "src",
   "ignore": [
     "firebase.json",
     "**/.*",
