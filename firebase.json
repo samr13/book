@@ -1,6 +1,6 @@
 {
-  "firebase": "ucdd2-book",
-  "public": "build",
+  "firebase": "crackling-torch-8927",
+  "public": "apps",
   "ignore": [
     "firebase.json",
     "**/.*",
